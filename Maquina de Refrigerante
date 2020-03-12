@@ -1,1 +1,39 @@
+import java.util.Scanner;
+
+
+public class maquina {
+
+	public static void main(String[] args) {
+		 Scanner maquina = new Scanner(System.in);
+double valorinserido;
+double valorcoca = 0.45;
+double valor10;
+double valor25;
+double quant10;
+double quant25;
+double cofre = 0;
+int resp = 1;
+
+
+System.out.println("Digite a quantidade de moedas de 10 centavos: ");
+quant10 = maquina.nextDouble();
+
+System.out.println("Digite a quantidade de moedas de 25 centavos: ");
+quant25 = maquina.nextDouble();
+
+valor10 = quant10 * 0.10;
+valor25 = quant25 * 0.25;
+valorinserido = valor10 + valor25;
+if (valorinserido == 0.45) {
+	System.out.println("Obrigado pela Compra");
+} else {
+	System.out.println("Por favor insira o valor exato do produto!");
+	System.out.println("Valor da Coca Cola é de R$ 0,45");
+	cofre =+ valorinserido;
+}
+System.out.println("Valor contido na maquina é de =  R$" + cofre );
+
+
+	}
+}
 
